@@ -1,25 +1,60 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  
+    <div style={{display:'grid', gridTemplateColumns:'1fr 1fr 1fr', background:'linear-gradient(to right, #0062E6, #33AEFF)'}}>
+    <Vote subStatus = "FREE" price = "$0" user = "Single User" 
+    storage = "5GB Storage" publicProjects = "Unlimited Public Projects"
+    communityAccess = "Community Access" privateProjects = "Unlimited Private Projects"
+    phoneSupport = "Dedicated Phone Support" freeSubdomain = "Free Subdomain"
+    monthlyReport = "Monthly Status Reports"
+    />
+    <Vote subStatus = "PLUS" price = "$9" user = " 5 Users" 
+    storage = "50GB Storage" publicProjects = "Unlimited Public Projects"
+    communityAccess = "Community Access" privateProjects = "Unlimited Private Projects"
+    phoneSupport = "Dedicated Phone Support" freeSubdomain = "Free Subdomain"
+    monthlyReport = "Monthly Status Reports"/>
+    <Vote subStatus = "PRO" price = "$49" user = "Unlimited Users" 
+    storage = "150GB Storage" publicProjects = "Unlimited Public Projects"
+    communityAccess = "Community Access" privateProjects = "Unlimited Private Projects"
+    phoneSupport = "Dedicated Phone Support" freeSubdomain = "Unlimited Free Subdomain"
+    monthlyReport = "Monthly Status Reports"/>
+  </div>
   );
+} 
+
+function Vote(a){
+  return(
+    <section className={'contaienr'}>
+      <div className={'plan'}>
+        <div className={'plan-header'}>
+          <label className={'sub-status'}>{a.subStatus}</label><br></br>
+          <label className={'price'}>{a.price}<span className={'month'}>/month</span></label>
+        </div>
+        <hr></hr>
+      <ul className="plan-feature">
+      <li>{a.user}</li>
+      <li>{a.storage}</li>
+      <li>{a.publicProjects}</li>
+      <li>{a.communityAccess}</li>
+      <li>{a.privateProjects}</li>
+      <li>{a.phoneSupport}</li>
+      <li>{a.freeSubdomain}</li>
+      <li>{a.monthlyReport}</li>
+    </ul>
+    <button class="plan-choose" value="Button"  
+    type="submit" name="Button">BUTTON</button>
+        
+
+
+      </div>
+
+    </section>
+
+  )
+
 }
 
 export default App;
