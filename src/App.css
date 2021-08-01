@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -20,7 +21,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* font-size: calc(10px + 2vmin); */
   color: white;
 }
 
@@ -35,4 +36,94 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+
+/* new css */
+body{
+  background: linear-gradient(to right, #0062E6, #33AEFF);
+}
+.container{
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  height: 10rem;
+  transform: scale(0.7);
+}
+ .container hr{
+   margin: 1.5rem 0;
+ }
+.plan-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plan {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  color: black;
+  font-family: "Inter", sans-serif;
+  gap: 0.2rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  border: none;
+  transform: scale(0.7);
+}
+
+.plan-feature {
+  list-style: none;
+  padding: 0px;
+}
+
+.plan-feature li {
+  margin-bottom: 3px;
+  display: flex;
+  font-size: .2rem;
+}
+
+.plan-choose {
+  width: 100%;
+  background: linear-gradient(to right, #0062E6, #33AEFF);
+  border-radius: 2rem;
+  border: none;
+  color: white;
+  font-size: 6px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.plan:hover {
+  border-radius: 24px;
+  padding: 24px;
+  font-family: "Inter", sans-serif;
+  transform: scale(0.9);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  opacity: 1;  
+}
+.plan-choose:hover{
+  opacity: 1;
+}
+
+.plan-feature li:before {
+  content: "✓";
+  margin-right: 16px;
+}
+
+.sub-status{
+  font-size: 2px;
+  font-weight: 500;
+  color: darkgray;
+}
+.price{
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.month{
+  font-size: 3px;
+  font-weight: 100;
 }
