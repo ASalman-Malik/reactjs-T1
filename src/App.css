@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 .App {
   text-align: center;
   
@@ -29,17 +30,6 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-
 
 /* new css */
 body{
@@ -47,10 +37,8 @@ body{
 }
 .container{
   display: flex;
-  background-color: white;
   justify-content: center;
-/*   height: 10rem; */
-/*   transform: scale(0.7); */
+ 
 }
  .container hr{
    margin: 1.5rem 0;
@@ -58,21 +46,16 @@ body{
 .plan-header {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
 }
 
 .plan {
   background: #ffffff;
-  border-radius: 16px;
+  border-radius: 24px;
   padding: 24px;
   color: black;
   font-family: "Inter", sans-serif;
-  gap: 0.2rem;
-  transition: all 0.2s;
-  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
-  border: none;
-  transform: scale(1.0);
 }
 
 .plan-feature {
@@ -81,9 +64,10 @@ body{
 }
 
 .plan-feature li {
-  margin-bottom: 3px;
+  margin-bottom: 16px;
   display: flex;
-  font-size: .2rem;
+  font-size: .9rem;
+  /* font-weight: bold; */
 }
 
 .plan-choose {
@@ -101,9 +85,10 @@ body{
   border-radius: 24px;
   padding: 24px;
   font-family: "Inter", sans-serif;
-  transform: scale(1.5);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
-  opacity: 1;  
+  opacity: 1; 
+  transform: translateY(10px);
+ 
 }
 .plan-choose:hover{
   opacity: 1;
