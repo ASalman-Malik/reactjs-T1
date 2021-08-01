@@ -117,6 +117,7 @@ body{
   .parent{
     display: flex;
     flex-direction: column;
+    justify-cpntent: center;
   }
   
 }
