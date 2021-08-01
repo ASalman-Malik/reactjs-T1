@@ -112,3 +112,11 @@ body{
   font-size: 3px;
   font-weight: 100;
 }
+
+@media (max-width: 425px){
+  .parent{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
