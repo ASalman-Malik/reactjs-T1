@@ -27,7 +27,7 @@ function App() {
 
 function Vote(a){
   return(
-    <div className={'contaienr'}>
+    <div className={'container'}>
       <div className={'plan'}>
         <div className={'plan-header'}>
           <label className={'sub-status'}>{a.subStatus}</label><br></br>
