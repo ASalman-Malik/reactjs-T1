@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
   
-    <div style={{display:'flex', justifyContent:'center',gap:'1rem'}}>
+    <div className={'parent'} style={{display:'flex', justifyContent:'center',gap:'1rem'}}>
     <Vote subStatus = "FREE" price = "$0" user = "Single User" 
     storage = "5GB Storage" publicProjects = "Unlimited Public Projects"
     communityAccess = "Community Access" privateProjects = "Unlimited Private Projects"
