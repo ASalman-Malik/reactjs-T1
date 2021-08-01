@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
   
-    <div style={{display:'grid', gridTemplateColumns:'1fr 1fr 1fr', background:'linear-gradient(to right, #0062E6, #33AEFF)'}}>
+    <div style={{display:'flex', justifyContent:'center',gap:'1rem'}}>
     <Vote subStatus = "FREE" price = "$0" user = "Single User" 
     storage = "5GB Storage" publicProjects = "Unlimited Public Projects"
     communityAccess = "Community Access" privateProjects = "Unlimited Private Projects"
@@ -27,7 +27,7 @@ function App() {
 
 function Vote(a){
   return(
-    <section className={'contaienr'}>
+    <div className={'contaienr'}>
       <div className={'plan'}>
         <div className={'plan-header'}>
           <label className={'sub-status'}>{a.subStatus}</label><br></br>
@@ -51,7 +51,7 @@ function Vote(a){
 
       </div>
 
-    </section>
+    </div>
 
   )
 
