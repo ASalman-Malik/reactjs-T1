@@ -50,7 +50,7 @@ body{
   background-color: white;
   justify-content: center;
 /*   height: 10rem; */
-  transform: scale(0.7);
+/*   transform: scale(0.7); */
 }
  .container hr{
    margin: 1.5rem 0;
