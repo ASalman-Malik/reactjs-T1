@@ -100,16 +100,16 @@ body{
 }
 
 .sub-status{
-  font-size: 2px;
+  font-size: 20px;
   font-weight: 500;
   color: darkgray;
 }
 .price{
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 2rem;
 }
 .month{
-  font-size: 3px;
+  font-size: 0.8rem;
   font-weight: 100;
 }
 
